@@ -1,0 +1,47 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SpamDelete
+</name>
+</assembly>
+<members>
+<member name="T:SpamDelete.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SpamDelete.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SpamDelete.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:SpamDelete.FrmXmlReadWrite.wb">
+Public _firstName As String
+Public _id As Integer
+Public _lastName As String
+Public _salary As Integer
+</member>
+<member name="T:SpamDelete.Utilities">
+    ' Storage of employee data.
+    Public _firstName As String
+    Public _id As Integer
+    Public _lastName As String
+    Public _salary As Integer
+End Class
+</member>
+<member name="M:SpamDelete.XmlUtilities.InitSpamList(System.String)">
+        ' End document.
+        writer.WriteEndElement()
+        writer.WriteEndDocument()
+    End Using
+End Sub
+</member>
+</members>
+</doc>

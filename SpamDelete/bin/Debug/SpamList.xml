@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SpamList>
+  <General>
+    <Item>
+      <Entry>
+        <OriginalText>Datum und Uhrzeit</OriginalText>
+        <SearchText>07.03.2020 19:52:35</SearchText>
+      </Entry>
+      <Entry>
+        <OriginalText>Datum und Uhrzeit</OriginalText>
+        <SearchText>07.03.2020 19:52:35</SearchText>
+      </Entry>
+      <Entry>
+        <OriginalText>Datum und Uhrzeit</OriginalText>
+        <SearchText>07.03.2020 19:52:40</SearchText>
+      </Entry>
+      <Entry>
+        <OriginalText>Datum und Uhrzeit</OriginalText>
+        <SearchText>07.03.2020 19:52:41</SearchText>
+      </Entry>
+      <Entry>
+        <OriginalText>Datum und Uhrzeit</OriginalText>
+        <SearchText>07.03.2020 19:52:42</SearchText>
+      </Entry>
+    </Item>
+  </General>
+</SpamList>
