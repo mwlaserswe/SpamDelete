@@ -5,8 +5,9 @@ Imports System.IO
 Public Class FrmMain
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        SpamDirectoryDest = My.Settings.SpamDirectoryDest
+
         SpamDirectorySource = My.Settings.SpamDirectorySource
+        T_CheckLastDays.Text = My.Settings.NumberOfDays
     End Sub
 
 
@@ -38,10 +39,19 @@ Public Class FrmMain
         AppendSpamList(Application.StartupPath & "\SpamList.xml", "/SpamList/General/Item", "Entry", Content)
     End Sub
 
+    '''Private Function IsFileYounger(FileName) As Boolean
+    '''    Dim TageszahlInDatum As String
+    '''    Dim DateIdx As Integer
+
+    '''    TageszahlInDatum = DateAdd("d", DateIdx - 1, "1.1.2000")
+    '''End Function
+
 
     Private Sub B_ScanEmails_Click(sender As Object, e As EventArgs) Handles B_ScanEmails.Click
         Dim FullPath As String
         Dim Result As Integer
+        Dim InfoText As String
+
 
         SpamListCnt = ReadSpamList(Application.StartupPath & "\SpamList.xml", SpamTextArray)
 
@@ -65,16 +75,50 @@ Public Class FrmMain
         Dim oFile As System.IO.FileInfo
         ListBox1.Items.Clear()
 
+        InfoText = ""
+
         For Each oFile In oFiles
             FullPath = Path.Combine(sPath, oFile.Name)
 
-            Result = ScanEmail(FullPath)
-            If Result > 0 Then
-                ListBox1.Items.Add(oFile.Name)
-                'My.Computer.FileSystem.MoveFile(Path.Combine(SpamDirectorySource, oFile.Name), Path.Combine(SpamDirectoryDest, oFile.Name))
-                ReplaceSubject(Path.Combine(SpamDirectorySource, oFile.Name))
+            'InfoText = oFile.Name
+
+            'TextBox2.Text = System.IO.File.GetCreationTime(FullPath)
+            TextBox2.Text = System.IO.File.GetLastWriteTime(FullPath)
+
+            Dim FileDate As Date
+            Dim LastDate As Date
+            Dim DateDiff As Integer
+            FileDate = File.GetLastWriteTime(FullPath)
+            LastDate = DateAdd("d", -T_CheckLastDays.Text, Today)
+            DateDiff = DateTime.Compare(FileDate, LastDate)
+            'DateDiff = DateAndTime.DateDiff(DateInterval.Day, FileDate, LastDate)
+
+            InfoText = FileDate & " " & oFile.Name
+
+            If DateDiff > 0 Then
+
+
+                T_CurrentEmail.Text = oFile.Name
                 Application.DoEvents()
+
+                Result = ScanEmail(FullPath)
+                If Result > 0 Then
+                    InfoText = InfoText & " ==> SPAM"
+
+                    'My.Computer.FileSystem.MoveFile(Path.Combine(SpamDirectorySource, oFile.Name), Path.Combine(SpamDirectoryDest, oFile.Name))
+                    ReplaceSubject(Path.Combine(SpamDirectorySource, oFile.Name))
+                    Application.DoEvents()
+                Else
+                    InfoText = InfoText & " ==> ok"
+                End If
+
+                ListBox1.Items.Add(InfoText)
+
+            Else
+                InfoText = InfoText & "."
             End If
+
+            'ListBox1.Items.Add(InfoText)
         Next
 
     End Sub
@@ -85,30 +129,49 @@ Public Class FrmMain
     End Sub
 
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Dim FileName As String
-        OpenFileDialog1.ShowDialog()
-        FileName = OpenFileDialog1.FileName
-    End Sub
-
-
     Private Sub EmailDirectoryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmailDirectoryToolStripMenuItem.Click
-        Dim LclFileName As String
-        OpenFileDialog1.ShowDialog()
-        LclFileName = OpenFileDialog1.FileName
-        SpamDirectorySource = IO.Path.GetDirectoryName(LclFileName)
+        FolderBrowserDialog1.SelectedPath = SpamDirectorySource
+        FolderBrowserDialog1.Description = "Bitte die Inbox von Windows Live Mail wählen"
+        FolderBrowserDialog1.ShowDialog()
+        SpamDirectorySource = FolderBrowserDialog1.SelectedPath
+
         My.Settings.SpamDirectorySource = SpamDirectorySource
         My.Settings.Save()
     End Sub
 
 
-    Private Sub SpamDirectoryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SpamDirectoryToolStripMenuItem.Click
-        Dim LclFileName As String
-        OpenFileDialog1.ShowDialog()
-        LclFileName = OpenFileDialog1.FileName
-        SpamDirectoryDest = IO.Path.GetDirectoryName(LclFileName)
-        My.Settings.SpamDirectoryDest = SpamDirectoryDest
-        My.Settings.Save()
+
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        TextBox1.Text = NumberLinesScanned & " Lines"
     End Sub
 
+    Private Sub T_CheckLastDays_TextChanged(sender As Object, e As EventArgs) Handles T_CheckLastDays.TextChanged
+        If IsNumeric(T_CheckLastDays.Text) Then
+            Select Case T_CheckLastDays.Text
+                Case 0
+                    Label4.Text = "Check today only"
+                Case 1
+                    Label4.Text = "Check yesterday and today"
+                Case Else
+                    Label4.Text = "Check last " & T_CheckLastDays.Text & " days"
+            End Select
+
+            My.Settings.NumberOfDays = CInt(T_CheckLastDays.Text)
+            My.Settings.Save()
+        End If
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim FileDate As Date
+        Dim LastDate As Date
+        Dim DateDiff As Integer
+
+        FileDate = "7.3.2020"
+        LastDate = DateAdd("d", -T_CheckLastDays.Text, Today)
+        DateDiff = DateTime.Compare(FileDate, LastDate)
+        'DateDiff = DateAndTime.DateDiff("d", FileDate, LastDate)
+        TextBox3.Text = DateDiff
+    End Sub
 End Class

@@ -1,22 +1,5 @@
 ﻿Option Explicit On
 
-'''Class Employee
-'''    Public Sub New(ByVal id As Integer, ByVal firstName As String,
-'''                       ByVal lastName As String, ByVal salary As Integer)
-'''        ' Set fields.
-'''        Me._id = id
-'''        Me._firstName = firstName
-'''        Me._lastName = lastName
-'''        Me._salary = salary
-'''    End Sub
-
-'''    ' Storage of employee data.
-'''    Public _firstName As String
-'''    Public _id As Integer
-'''    Public _lastName As String
-'''    Public _salary As Integer
-'''End Class
-
 
 Module Utilities
     Public Function Zahl(Txt As String) As Double

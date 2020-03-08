@@ -8,17 +8,26 @@
         Dim FoundArray() As Boolean
         Dim dmy As String
         Dim pos As Integer
+        Dim TooBig As Boolean
 
-        'On Error GoTo ScanFileError
+        On Error GoTo ScanFileError
         idx = 0
 
         FileNumber = FreeFile()
         FileOpen(FileNumber, Filename, OpenMode.Input)
 
         Zeile = ""
-        'Dim l As Integer
+
 
         While Not EOF(FileNumber)
+            idx = idx + 1
+            NumberLinesScanned = idx
+            Application.DoEvents()
+            If idx > 9999 Then
+                TooBig = True       ' Big file is usually not SPAM
+                ScanEmail = 0
+                Exit Function
+            End If
             'Zeile = LineInput(FileNumber)
             'l = Len(Zeile)
             Zeile = Zeile & LineInput(FileNumber)
@@ -34,6 +43,7 @@
             ReDim FoundArray(SpamSnippets.Length - 1)
             'Check all snippets
             For k = 0 To SpamSnippets.Length - 1
+                'NumberLinesScanned = i
                 dmy = SpamSnippets(k)
                 pos = InStr(Zeile, SpamSnippets(k), CompareMethod.Text)
                 If InStr(Zeile, SpamSnippets(k), CompareMethod.Text) > 0 Then

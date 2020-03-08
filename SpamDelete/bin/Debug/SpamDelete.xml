@@ -28,13 +28,9 @@ Public _id As Integer
 Public _lastName As String
 Public _salary As Integer
 </member>
-<member name="T:SpamDelete.Utilities">
-    ' Storage of employee data.
-    Public _firstName As String
-    Public _id As Integer
-    Public _lastName As String
-    Public _salary As Integer
-End Class
+<member name="M:SpamDelete.FrmMain.B_ScanEmails_Click(System.Object,System.EventArgs)">
+    TageszahlInDatum = DateAdd("d", DateIdx - 1, "1.1.2000")
+End Function
 </member>
 <member name="M:SpamDelete.XmlUtilities.InitSpamList(System.String)">
         ' End document.

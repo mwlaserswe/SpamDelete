@@ -14,7 +14,6 @@ D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\Spa
 D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\SpamDelete\bin\Debug\SpamDelete.exe
 D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\SpamDelete\bin\Debug\SpamDelete.pdb
 D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\SpamDelete\bin\Debug\SpamDelete.xml
-D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\SpamDelete\obj\Debug\SpamDelete.vbprojAssemblyReference.cache
 D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\SpamDelete\obj\Debug\SpamDelete.FrmXmlReadWrite.resources
 D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\SpamDelete\obj\Debug\SpamDelete.FrmMain.resources
 D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\SpamDelete\obj\Debug\SpamDelete.Resources.resources
@@ -22,3 +21,4 @@ D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\Spa
 D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\SpamDelete\obj\Debug\SpamDelete.exe
 D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\SpamDelete\obj\Debug\SpamDelete.xml
 D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\SpamDelete\obj\Debug\SpamDelete.pdb
+D:\Eigene Dateien\Projekte privat\Visual Studio\VB-Projekt_01\SpamDelete.git\SpamDelete\obj\Debug\SpamDelete.vbprojAssemblyReference.cache

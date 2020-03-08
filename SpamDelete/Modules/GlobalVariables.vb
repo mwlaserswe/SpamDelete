@@ -12,7 +12,8 @@ Module GlobalVariables
     Public SpamTextArray() As SpamInfo
 
     Public SpamDirectorySource As String
-    Public SpamDirectoryDest As String
+
+    Public NumberLinesScanned As Integer
 
 
     '''    Public Structure ChartItem

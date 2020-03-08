@@ -68,13 +68,13 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-        Public Property SpamDirectoryDest() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property NumberOfDays() As Integer
             Get
-                Return CType(Me("SpamDirectoryDest"),String)
+                Return CType(Me("NumberOfDays"),Integer)
             End Get
             Set
-                Me("SpamDirectoryDest") = value
+                Me("NumberOfDays") = value
             End Set
         End Property
     End Class
