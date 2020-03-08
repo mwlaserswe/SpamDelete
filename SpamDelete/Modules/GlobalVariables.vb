@@ -6,7 +6,7 @@ Public Structure SpamInfo
     Public _SearchText As String
 End Structure
 
-
+'<p style=3D"line-height:22px;font-size:14px;"><a href=3D"
 Module GlobalVariables
     Public SpamListCnt As Integer
     Public SpamTextArray() As SpamInfo

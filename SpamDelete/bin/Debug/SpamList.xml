@@ -3,6 +3,10 @@
   <General>
     <Item>
       <Entry>
+        <OriginalText>p style=3D"line-height:22px;font-size:14px;"</OriginalText>
+        <SearchText>style3D;line-height:22px;font-size:14px</SearchText>
+      </Entry>
+      <Entry>
         <OriginalText>Erschreckt die Eindringlinge</OriginalText>
         <SearchText>Erschreckt;die;Eindringlinge</SearchText>
       </Entry>
@@ -181,6 +185,10 @@
       <Entry>
         <OriginalText>Möchtest du auf nah besser sehen</OriginalText>
         <SearchText>M;chtest;du;auf;nah;besser;sehen</SearchText>
+      </Entry>
+      <Entry>
+        <OriginalText>I hope my email finds you in good health</OriginalText>
+        <SearchText>I;hope;my;email;finds;you;in;good;health</SearchText>
       </Entry>
     </Item>
   </General>

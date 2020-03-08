@@ -73,7 +73,7 @@ Public Class FrmMain
                 ListBox1.Items.Add(oFile.Name)
                 'My.Computer.FileSystem.MoveFile(Path.Combine(SpamDirectorySource, oFile.Name), Path.Combine(SpamDirectoryDest, oFile.Name))
                 ReplaceSubject(Path.Combine(SpamDirectorySource, oFile.Name))
-
+                Application.DoEvents()
             End If
         Next
 
