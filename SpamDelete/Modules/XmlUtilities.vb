@@ -3,10 +3,6 @@
 Imports System.Xml
 
 Module XmlUtilities
-    Public Structure SpamInfo
-        Public _OriginalText As String
-        Public _SearchText As String
-    End Structure
 
 
 

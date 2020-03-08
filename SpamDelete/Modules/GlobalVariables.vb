@@ -1,11 +1,18 @@
 ﻿Option Explicit On
 
 
+Public Structure SpamInfo
+    Public _OriginalText As String
+    Public _SearchText As String
+End Structure
 
 
 Module GlobalVariables
     Public SpamListCnt As Integer
     Public SpamTextArray() As SpamInfo
+
+    Public SpamDirectorySource As String
+    Public SpamDirectoryDest As String
 
 
     '''    Public Structure ChartItem
