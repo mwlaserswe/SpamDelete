@@ -42,6 +42,14 @@
         <OriginalText>Schräge, gebrochene oder verfärbte Zähne hast du</OriginalText>
         <SearchText>Schr§ge§§gebrochene§oder§verf§rbte§Z§hne§hast§du</SearchText>
       </Entry>
+      <Entry>
+        <OriginalText>John Mitchell | Product &amp; Customer Service Manager</OriginalText>
+        <SearchText>John§Mitchell§§§Product§§§Customer§Service§Manager</SearchText>
+      </Entry>
+      <Entry>
+        <OriginalText>Esmerina Doku Albania</OriginalText>
+        <SearchText>Esmerina§Doku§Albania</SearchText>
+      </Entry>
     </Item>
   </General>
 </SpamList>

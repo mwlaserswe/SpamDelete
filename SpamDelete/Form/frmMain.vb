@@ -12,7 +12,8 @@ Public Class FrmMain
     End Sub
 
 
-    Private Sub B_ShowSpamList_Click(sender As Object, e As EventArgs)
+
+    Private Sub B_ShowSpamList_Click_1(sender As Object, e As EventArgs) Handles B_ShowSpamList.Click
 
         Dim myPath As String = "Notepad++.exe"
 
@@ -27,12 +28,12 @@ Public Class FrmMain
     End Sub
 
 
-    Private Sub B_XmlReadWrite_Click(sender As Object, e As EventArgs)
+    Private Sub B_XmlReadWrite_Click_1(sender As Object, e As EventArgs) Handles B_XmlReadWrite.Click
         FrmXmlReadWrite.Show()
     End Sub
 
 
-    Private Sub B_AddToSPAM_Click(sender As Object, e As EventArgs)
+    Private Sub B_AddToSPAM_Click_1(sender As Object, e As EventArgs) Handles B_AddToSPAM.Click
         Dim Content As SpamInfo
 
         Content._OriginalText = T_AddToSPAM.Text
@@ -167,4 +168,6 @@ Public Class FrmMain
     Private Sub Ch_ModifySpamList_CheckedChanged(sender As Object, e As EventArgs) Handles Ch_ModifySpamList.CheckedChanged
         Grp_Modify.Visible = Ch_ModifySpamList.Checked
     End Sub
+
+
 End Class

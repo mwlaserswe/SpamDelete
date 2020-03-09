@@ -40,10 +40,10 @@ Partial Class FrmMain
         Me.Label4 = New System.Windows.Forms.Label()
         Me.T_CheckLastDays = New System.Windows.Forms.TextBox()
         Me.Grp_Modify = New System.Windows.Forms.GroupBox()
+        Me.B_XmlReadWrite = New System.Windows.Forms.Button()
         Me.B_ShowSpamList = New System.Windows.Forms.Button()
         Me.T_AddToSPAM = New System.Windows.Forms.TextBox()
         Me.B_AddToSPAM = New System.Windows.Forms.Button()
-        Me.B_XmlReadWrite = New System.Windows.Forms.Button()
         Me.Ch_ModifySpamList = New System.Windows.Forms.CheckBox()
         Me.MenuStrip1.SuspendLayout()
         Me.Grp_Modify.SuspendLayout()
@@ -93,7 +93,7 @@ Partial Class FrmMain
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailDirectoryToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(72, 44)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(72, 36)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EmailDirectoryToolStripMenuItem
@@ -176,6 +176,15 @@ Partial Class FrmMain
         Me.Grp_Modify.TabStop = False
         Me.Grp_Modify.Text = "Modify"
         '
+        'B_XmlReadWrite
+        '
+        Me.B_XmlReadWrite.Location = New System.Drawing.Point(291, 202)
+        Me.B_XmlReadWrite.Name = "B_XmlReadWrite"
+        Me.B_XmlReadWrite.Size = New System.Drawing.Size(235, 65)
+        Me.B_XmlReadWrite.TabIndex = 6
+        Me.B_XmlReadWrite.Text = "XML Read / Write"
+        Me.B_XmlReadWrite.UseVisualStyleBackColor = True
+        '
         'B_ShowSpamList
         '
         Me.B_ShowSpamList.Location = New System.Drawing.Point(32, 202)
@@ -200,15 +209,6 @@ Partial Class FrmMain
         Me.B_AddToSPAM.TabIndex = 3
         Me.B_AddToSPAM.Text = "Add to SPAM"
         Me.B_AddToSPAM.UseVisualStyleBackColor = True
-        '
-        'B_XmlReadWrite
-        '
-        Me.B_XmlReadWrite.Location = New System.Drawing.Point(291, 202)
-        Me.B_XmlReadWrite.Name = "B_XmlReadWrite"
-        Me.B_XmlReadWrite.Size = New System.Drawing.Size(235, 65)
-        Me.B_XmlReadWrite.TabIndex = 6
-        Me.B_XmlReadWrite.Text = "XML Read / Write"
-        Me.B_XmlReadWrite.UseVisualStyleBackColor = True
         '
         'Ch_ModifySpamList
         '
