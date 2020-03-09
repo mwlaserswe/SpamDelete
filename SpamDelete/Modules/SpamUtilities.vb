@@ -1,13 +1,23 @@
-﻿Module SpamUtilities
+﻿Option Explicit On
+Public Structure Found
+    Public Flag As Boolean
+    Public Pos As Integer
+End Structure
+
+Module SpamUtilities
 
     Public Function ScanEmail(Filename As String) As Integer
+
+
+
+
         Dim FileNumber As Integer
         Dim Zeile As String
         Dim idx As Integer
         Dim SpamSnippets() As String
-        Dim FoundArray() As Boolean
+        Dim FoundArray() As Found
         Dim dmy As String
-        Dim pos As Integer
+        Dim Pos As Integer
         Dim TooBig As Boolean
 
         On Error GoTo ScanFileError
@@ -28,38 +38,37 @@
                 ScanEmail = 0
                 Exit Function
             End If
-            'Zeile = LineInput(FileNumber)
-            'l = Len(Zeile)
-            Zeile = Zeile & LineInput(FileNumber)
+
+            Zeile = Zeile & LineInput(FileNumber) & vbCr & vbLf
         End While
-        Zeile = Zeile.Replace("=", "")
+        Zeile = Zeile.Replace("=" & vbCr & vbLf, "")
         FileClose(FileNumber)
 
-
+        'Entire file is in a single string "Zeile" now
 
         'walk through all Spamtexts
         For i = 0 To SpamTextArray.Length - 1
-            SepariereString(SpamTextArray(i)._SearchText, SpamSnippets, ";")
+            SepariereString(SpamTextArray(i)._SearchText, SpamSnippets, "§")
             ReDim FoundArray(SpamSnippets.Length - 1)
             'Check all snippets
             For k = 0 To SpamSnippets.Length - 1
-                'NumberLinesScanned = i
-                dmy = SpamSnippets(k)
-                pos = InStr(Zeile, SpamSnippets(k), CompareMethod.Text)
-                If InStr(Zeile, SpamSnippets(k), CompareMethod.Text) > 0 Then
-                    FoundArray(k) = True
+                Pos = InStr(Zeile, SpamSnippets(k), CompareMethod.Text)
+                If Pos > 0 Then
+                    FoundArray(k).Flag = True
+                    FoundArray(k).Pos = Pos
                 End If
             Next k
 
             ScanEmail = 1
             For k = 0 To FoundArray.Length - 1
-                If FoundArray(k) = False Then
+                If FoundArray(k).Flag = False Then
                     ScanEmail = 0
                 End If
             Next k
             If ScanEmail > 0 Then
                 Exit For
             End If
+
         Next i
 
         Exit Function
@@ -69,6 +78,7 @@ ScanFileError:
         MsgBox(Filename & vbCr & Err.Description, , "xxxxx")
         ScanEmail = -2
     End Function
+
 
     Public Function ConvertOriginalToSearchText(OriginalText As String) As String
         Dim Input As String
@@ -88,7 +98,7 @@ ScanFileError:
                 Or c = "ü" _
                 Or c = "ß" _
             Then
-                NewString = NewString & ";"
+                NewString = NewString & "§"
             Else
                 NewString = NewString & c
             End If

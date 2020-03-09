@@ -8,10 +8,11 @@ Public Class FrmMain
 
         SpamDirectorySource = My.Settings.SpamDirectorySource
         T_CheckLastDays.Text = My.Settings.NumberOfDays
+        Grp_Modify.Visible = False
     End Sub
 
 
-    Private Sub B_ShowSpamList_Click(sender As Object, e As EventArgs) Handles B_ShowSpamList.Click
+    Private Sub B_ShowSpamList_Click(sender As Object, e As EventArgs)
 
         Dim myPath As String = "Notepad++.exe"
 
@@ -26,12 +27,12 @@ Public Class FrmMain
     End Sub
 
 
-    Private Sub B_XmlReadWrite_Click(sender As Object, e As EventArgs) Handles B_XmlReadWrite.Click
+    Private Sub B_XmlReadWrite_Click(sender As Object, e As EventArgs)
         FrmXmlReadWrite.Show()
     End Sub
 
 
-    Private Sub B_AddToSPAM_Click(sender As Object, e As EventArgs) Handles B_AddToSPAM.Click
+    Private Sub B_AddToSPAM_Click(sender As Object, e As EventArgs)
         Dim Content As SpamInfo
 
         Content._OriginalText = T_AddToSPAM.Text
@@ -83,7 +84,7 @@ Public Class FrmMain
             'InfoText = oFile.Name
 
             'TextBox2.Text = System.IO.File.GetCreationTime(FullPath)
-            TextBox2.Text = System.IO.File.GetLastWriteTime(FullPath)
+            'TextBox2.Text = System.IO.File.GetLastWriteTime(FullPath)
 
             Dim FileDate As Date
             Dim LastDate As Date
@@ -163,15 +164,7 @@ Public Class FrmMain
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim FileDate As Date
-        Dim LastDate As Date
-        Dim DateDiff As Integer
-
-        FileDate = "7.3.2020"
-        LastDate = DateAdd("d", -T_CheckLastDays.Text, Today)
-        DateDiff = DateTime.Compare(FileDate, LastDate)
-        'DateDiff = DateAndTime.DateDiff("d", FileDate, LastDate)
-        TextBox3.Text = DateDiff
+    Private Sub Ch_ModifySpamList_CheckedChanged(sender As Object, e As EventArgs) Handles Ch_ModifySpamList.CheckedChanged
+        Grp_Modify.Visible = Ch_ModifySpamList.Checked
     End Sub
 End Class

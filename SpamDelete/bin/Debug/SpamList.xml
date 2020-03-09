@@ -3,192 +3,44 @@
   <General>
     <Item>
       <Entry>
-        <OriginalText>p style=3D"line-height:22px;font-size:14px;"</OriginalText>
-        <SearchText>style3D;line-height:22px;font-size:14px</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Erschreckt die Eindringlinge</OriginalText>
-        <SearchText>Erschreckt;die;Eindringlinge</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Möchtest du sofort dein Lächeln verschönern?</OriginalText>
-        <SearchText>M;chtest;du;sofort;dein;L;cheln;versch;nern;</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>So vermeide einen schweren Unfall</OriginalText>
-        <SearchText>So;vermeide;einen;schweren;Unfall</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Für beschmutzte Wände</OriginalText>
-        <SearchText>F;r;beschmutzte;W;nde</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Krumme Zehen</OriginalText>
-        <SearchText>Krumme;Zehen</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Zum Balkon, zur Terrasse, über den Kindern: Beschattung mit UV Schutz</OriginalText>
-        <SearchText>Zum;Balkon;;zur;Terrasse;;;ber;den;Kindern;;Beschattung;mit;UV;Schutz</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Stört dich, dass deine Zähne nicht makellos sind?</OriginalText>
-        <SearchText>St;rt;dich;;dass;deine;Z;hne;nicht;makellos;sind;</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Ist dein Messer unscharf</OriginalText>
-        <SearchText>Ist;dein;Messer;unscharf</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>KEIN MEHR GELDVERSCHWENDUNG</OriginalText>
-        <SearchText>KEIN;MEHR;GELDVERSCHWENDUNG</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Gegen Fingerabdrücke, Flecken: ein Traum Farbsprühgerät</OriginalText>
-        <SearchText>Gegen;Fingerabdr;cke;;Flecken;;ein;Traum;Farbspr;hger;t</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Erleichtere das Leben mit 60m extra langem Schlauch</OriginalText>
-        <SearchText>Erleichtere;das;Leben;mit;;;m;extra;langem;Schlauch</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Gehst du oft wandern, trainieren, joggen</OriginalText>
-        <SearchText>Gehst;du;oft;wandern;;trainieren;;joggen</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Siehst du auch schlecht die kleinen Aufschriften</OriginalText>
-        <SearchText>Siehst;du;auch;schlecht;die;kleinen;Aufschriften</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Wagen verkratzt? Lackausbesserung Politurmaschine</OriginalText>
-        <SearchText>Wagen;verkratzt;;Lackausbesserung;Politurmaschine</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Stirnlampe billig: brutal große Leuchtweite</OriginalText>
-        <SearchText>Stirnlampe;billig;;brutal;gro;e;Leuchtweite</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>TOLLER Radarwarner im Auto - kein Bußgeld</OriginalText>
-        <SearchText>TOLLER;Radarwarner;im;Auto;;;kein;Bu;geld</SearchText>
+        <OriginalText>style=3D"line-height:22px;font-size:14px</OriginalText>
+        <SearchText>style=3D"line-height:22px;font-size:14px</SearchText>
       </Entry>
       <Entry>
         <OriginalText>Muhammad Abdulaziz</OriginalText>
-        <SearchText>Muhammad;Abdulaziz</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Besuchst du oft Konzerte, Theater? Sehe alles von nahe mit neuem Fernrohr</OriginalText>
-        <SearchText>Besuchst;du;oft;Konzerte;;Theater;;Sehe;alles;von;nahe;mit;neuem;Fernrohr</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>STIRNLAMPE powerstak - spritzwassergeschützt, große Leuchtweite</OriginalText>
-        <SearchText>STIRNLAMPE;powerstak;;;spritzwassergesch;tzt;;gro;e;Leuchtweite</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Heilmittel gegen abgebrochene Zähnen</OriginalText>
-        <SearchText>Heilmittel;gegen;abgebrochene;Z;hnen</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Wie ist Schnarchen vorbei</OriginalText>
-        <SearchText>Wie;ist;Schnarchen;vorbei</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Stumpfes Messer? Ein paar Bewegungen und es wird wieder messerscharf</OriginalText>
-        <SearchText>Stumpfes;Messer;;Ein;paar;Bewegungen;und;es;wird;wieder;messerscharf</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Bringt dich Schnarchen in die Höhe</OriginalText>
-        <SearchText>Bringt;dich;Schnarchen;in;die;H;he</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Spiele Musik, telefoniere mit der neuen Headset-Generation jederzeit</OriginalText>
-        <SearchText>Spiele;Musik;;telefoniere;mit;der;neuen;Headset;Generation;jederzeit</SearchText>
+        <SearchText>Muhammad§Abdulaziz</SearchText>
       </Entry>
       <Entry>
         <OriginalText>﻿Brennt und juckt auch deine Haut oft nach der Dusche</OriginalText>
-        <SearchText>;Brennt;und;juckt;auch;deine;Haut;oft;nach;der;Dusche</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Vertreibt alle Mäuse, Insekten</OriginalText>
-        <SearchText>Vertreibt;alle;M;use;;Insekten</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Wie wäre es, ab heute keine grauen Haare mehr</OriginalText>
-        <SearchText>Wie;w;re;es;;ab;heute;keine;grauen;Haare;mehr</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Stört es dir, dass du winzige Dinge nicht scharf siehst</OriginalText>
-        <SearchText>St;rt;es;dir;;dass;du;winzige;Dinge;nicht;scharf;siehst</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>SCHÜTZE Haus, Wohnung vor Nagern, Insekten</OriginalText>
-        <SearchText>SCH;TZE;Haus;;Wohnung;vor;Nagern;;Insekten</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Schätzchen, schnarche bitte nicht</OriginalText>
-        <SearchText>Sch;tzchen;;schnarche;bitte;nicht</SearchText>
+        <SearchText>§Brennt§und§juckt§auch§deine§Haut§oft§nach§der§Dusche</SearchText>
       </Entry>
       <Entry>
         <OriginalText>Chefökonom und Executive Director, Monetary Analysis, Bank of England</OriginalText>
-        <SearchText>Chef;konom;und;Executive;Director;;Monetary;Analysis;;Bank;of;England</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Er wird sich sicher über Leser-Maßband freuen</OriginalText>
-        <SearchText>Er;wird;sich;sicher;;ber;Leser;Ma;band;freuen</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Verbessert dein Aussehen</OriginalText>
-        <SearchText>Verbessert;dein;Aussehen</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>krummen Zehen</OriginalText>
-        <SearchText>krummen;Zehen</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Befreit dich vom Nagelpilz</OriginalText>
-        <SearchText>Befreit;dich;vom;Nagelpilz</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Magst du wandern, reisen</OriginalText>
-        <SearchText>Magst;du;wandern;;reisen</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Siehst du kaum wegen dem anderen Scheinwerfer</OriginalText>
-        <SearchText>Siehst;du;kaum;wegen;dem;anderen;Scheinwerfer</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Überwältigendes Lächeln? Setze diese Zahnbrücke auf, natürlicher Eindruck</OriginalText>
-        <SearchText>;berw;ltigendes;L;cheln;;Setze;diese;Zahnbr;cke;auf;;nat;rlicher;Eindruck</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Muskelschmerzen? Heile es schnell mit Massagegerät und mit Wärmetherapie</OriginalText>
-        <SearchText>Muskelschmerzen;;Heile;es;schnell;mit;Massageger;t;und;mit;W;rmetherapie</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>NEUE Lösung gegen Schnarchen</OriginalText>
-        <SearchText>NEUE;L;sung;gegen;Schnarchen</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>BYE-BYE, Schnarchen</OriginalText>
-        <SearchText>BYE;BYE;;Schnarchen</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Hast du Angst, dass die Beleuchtung angeschaltet bleibt</OriginalText>
-        <SearchText>Hast;du;Angst;;dass;die;Beleuchtung;angeschaltet;bleibt</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Neue Erfindung: digitales Maßband zu Aufgaben zu Hause, im Werkstatt</OriginalText>
-        <SearchText>Neue;Erfindung;;digitales;Ma;band;zu;Aufgaben;zu;Hause;;im;Werkstatt</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Mit digitaler Armatur überall Warmwasser zaubern</OriginalText>
-        <SearchText>Mit;digitaler;Armatur;;berall;Warmwasser;zaubern</SearchText>
-      </Entry>
-      <Entry>
-        <OriginalText>Möchtest du auf nah besser sehen</OriginalText>
-        <SearchText>M;chtest;du;auf;nah;besser;sehen</SearchText>
+        <SearchText>Chef§konom§und§Executive§Director§§Monetary§Analysis§§Bank§of§England</SearchText>
       </Entry>
       <Entry>
         <OriginalText>I hope my email finds you in good health</OriginalText>
-        <SearchText>I;hope;my;email;finds;you;in;good;health</SearchText>
+        <SearchText>I§hope§my§email§finds§you§in§good§health</SearchText>
+      </Entry>
+      <Entry>
+        <OriginalText>Dein Abfluss ist verstopft</OriginalText>
+        <SearchText>Dein§Abfluss§ist§verstopft</SearchText>
+      </Entry>
+      <Entry>
+        <OriginalText>Ich bin Dr. Robert Andrew und arbeite bei der Organisation der Vereinten Nationen als Assistent fьr Haushalt und Finanzen</OriginalText>
+        <SearchText>Ich§bin§Dr§§Robert§Andrew§und§arbeite§bei§der§Organisation§der§Vereinten§Nationen§als§Assistent§fьr§Haushalt§und§Finanzen</SearchText>
+      </Entry>
+      <Entry>
+        <OriginalText>KEIN MEHR GELDVERSCHWENDUNG – WEHRE SO DIE SCHNELLFAHREN-STRAFE AB </OriginalText>
+        <SearchText>KEIN§MEHR§GELDVERSCHWENDUNG§§§WEHRE§SO§DIE§SCHNELLFAHREN§STRAFE§AB§</SearchText>
+      </Entry>
+      <Entry>
+        <OriginalText>We awaits your approval before shipment</OriginalText>
+        <SearchText>We§awaits§your§approval§before§shipment</SearchText>
+      </Entry>
+      <Entry>
+        <OriginalText>Schräge, gebrochene oder verfärbte Zähne hast du</OriginalText>
+        <SearchText>Schr§ge§§gebrochene§oder§verf§rbte§Z§hne§hast§du</SearchText>
       </Entry>
     </Item>
   </General>
